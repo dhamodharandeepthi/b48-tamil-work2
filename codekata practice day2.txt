@@ -1,0 +1,213 @@
+1.You are given Two Numbers, A and B. If C = A + B. Find C.
+
+Note: Round off the output to a single decimal place.
+
+Input Description:
+You are provided with two numbers A and B.
+
+Output Description:
+Find the sum of the two numbers (A + B)
+
+Sample Input :
+1
+1
+Sample Output :
+2
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+
+  var a,b;
+  a = parseInt(userInput[0]);
+  b = parseInt(userInput[1]);
+  sum = a+b;
+  console.log(sum);
+
+  //end-here
+});
+
+
+2.You are given with a number "N", find its cube.
+
+Input Description:
+A positive integer is provided.
+
+Output Description:
+Find the cube of the number.
+
+Sample Input :
+2
+Sample Output :
+8
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var N = parseInt(userInput[0]);
+var cube = N*N*N;
+console.log(cube);
+
+  //end-here
+});
+
+3.You are given with a number A i.e. the temperature in Celcius. Write a program to convert this into Fahrenheit. 
+
+Note: In case of decimal values, round-off to two decimal places.
+
+Input Description:
+A number is provided in Celcius as the input of the program.
+
+Output Description:
+The output shall be the temperature converted into Fahrenheit corresponding to the input value print up to two decimal places and round off if required.
+
+Sample Input :
+12
+Sample Output :
+53.60
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var  Celcius = parseInt(userInput[0]);
+var Fahrenheit = (Celcius*1.8) + 32;
+Fahrenheit = Fahrenheit.toFixed(2);
+console.log(Fahrenheit);
+
+
+  //end-here
+});
+
+4.You will be provided with a number. Print the number of days in the month corresponding to that number.
+
+Note: In case the input is February, print 28 days. If the Input is not in valid range print "Error".
+
+Input Description:
+The input is in the form of a number.
+
+Output Description:
+Find the days in the month corresponding to the input number. Print Error if the input is not in a valid range.
+
+Sample Input :
+8
+Sample Output :
+31
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+var N = parseInt(userInput[0]);
+if(N == 1 || N == 3 || N == 5 || N == 7 || N == 8 || N == 10|| N == 12 )
+{
+    console.log("31");
+}
+else if(N == 4 || N == 6 || N == 9|| N == 11)
+{
+    console.log("30");
+}
+else if(N == 2)
+{
+    console.log("28");
+}
+else{
+    console.log("Error");
+}
+});
+
+5.You are provided with the radius of a circle "A". Find the length of its circumference.
+
+Note: In case the output is coming in decimal, roundoff to 2nd decimal place. In case the input is a negative number, print "Error".
+
+Input Description:
+The Radius of a circle is provided as the input of the program.
+
+Output Description:
+Calculate and print the Circumference of the circle corresponding to the input radius up to two decimal places.
+
+Sample Input :
+2
+Sample Output :
+12.57
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+var radius = parseFloat(userInput[0]);
+var result = 2*Math.PI*radius;
+result=result.toFixed(2);
+if(result<0)
+console.log("error");
+else
+console.log(result);
+
+  //end-here
+});
+
+
+
+
+
